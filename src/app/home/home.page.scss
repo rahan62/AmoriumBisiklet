@@ -1,1 +1,27 @@
+.main_header {
+  --ion-background-color: saddlebrown;
 
+}
+ion-toolbar {
+  --ion-background-color: saddlebrown;
+}
+ion-title {
+  color: white;
+}
+ion-card {
+justify-content: center;
+}
+.background-image {
+  --background: url('../../assets/activity-background-bicycle-2270328.jpg') no-repeat 100% 100%;
+}
+ion-input {
+  --background: #ffff;
+  color: #000000;
+}
+.white_background {
+  --background: #fff;
+  opacity: 0.7
+}
+ion-button {
+  --background: saddlebrown;
+}

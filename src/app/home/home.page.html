@@ -1,14 +1,137 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
+<ion-header class="main_header">
+
+    <ion-toolbar>
+        <ion-title>
+            Amorium Bisiklet Spor Kulübü
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content class="background-image">
+    <ion-grid style="height: 100%">
+        <ion-row justify-content-center="">
+
+            <ion-card class="white_background" style="width: 500px; height: 500px; margin-top: 10px;" wrap="">
+                <ion-card-header>
+                    <ion-toolbar>
+                        <ion-title>
+                            Kayıt
+                        </ion-title>
+                    </ion-toolbar>
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-input placeholder="  İsim" [(ngModel)]="name">
+
+                    </ion-input>
+                    <ion-input placeholder="  Soyisim" [(ngModel)]="surname">
+
+                    </ion-input>
+                    <ion-datetime placeholder="Doğum tarihiniz" [(ngModel)]="birthdate">
+
+                    </ion-datetime>
+                    <ion-input placeholder="  Lisans No" [(ngModel)]="licenceNo">
+
+                    </ion-input>
+                    <ion-input placeholder="  Spor Kulübü" [(ngModel)]="sportsClub">
+
+                    </ion-input>
+                    <ion-input placeholder="  TC Kimlik No" [(ngModel)]="tcIdentity">
+
+                    </ion-input>
+
+                </ion-card-content>
+                <ion-card-subtitle>
+                    <ion-row justify-content-center="">
+                        <ion-button (click)="addUser()">Kayıt Ol!</ion-button>
+                    </ion-row>
+
+                </ion-card-subtitle>
+            </ion-card>
+            <ion-card style="width: 500px; height: 500px;" wrap="">
+
+                <ion-img src="../assets/entegre_afis.jpg"></ion-img>
+
+            </ion-card>
+
+            <ion-card class="white_background" style="width: 500px; height: 500px;" wrap="">
+                <ion-card-header>
+
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-list>
+                        <ion-item>
+                            <ion-text>
+                                1- Yarışmada UCI ve Türkiye Bisiklet Federasyonu resmi kuralları geçerlidir.
+                            </ion-text>
+                        </ion-item>
+                        <ion-item>
+                            <ion-text>
+                                2- Yarışmaya yalnızca lisanslı sporcular katılabilirler.
+                            </ion-text>
+                        </ion-item>
+                        <ion-item>
+                            <ion-text>
+                                3- Yarışma kayıtları 02.09.2019 Tarihi Saat 24.00 itibariyle kapatılacaktır.
+                            </ion-text>
+                        </ion-item>
+                        <ion-item>
+                            <ion-text>
+                                4- Yarışmada dereceye giren sporculara çeşitli altın ödülleri bulunmaktadır.
+                            </ion-text>
+                        </ion-item>
+                        <ion-item>
+                            <ion-text>
+                                5- Kadınlar 45-50 km, Erkekler kategorisi 55-60 km arasındadır.
+                            </ion-text>
+                        </ion-item>
+                        <ion-item>
+                            <ion-text>
+                                6- Yarışmanın teknik toplantısı 03 Eylül günü saat 18.00'da Hüsnü Tandoğan Spor Salonu'nda yapılacaktır.
+                            </ion-text>
+                        </ion-item>
+                        <ion-item>
+                            <ion-text>
+                                7- Yarışmaya katılan sporcular, yarışma günü Gazi stadyumunda yapılacak olan ve saat
+                                16.00'da başlayacak olan Anadolu Ateşi Halk Dansları gösterisine ve Ses sanatçıları
+                                konserlerine ücretsiz katılabilirler..
+                            </ion-text>
+                        </ion-item>
+                        <ion-item>
+                            <ion-text>
+                                8- Yarışma ödülleri müsabakalar bitiminde Kastamonu Entegre Aş. Fabrikası önünde verilecektir.
+                            </ion-text>
+                        </ion-item>
+
+                    </ion-list>
+                </ion-card-content>
+            </ion-card>
+        </ion-row>
+        <ion-row justify-content-center="">
+            <ion-img src="../../assets/yarisParkur.png"></ion-img>
+
+        </ion-row>
+        <ion-row justify-content-center="">
+            <ion-title class="ion-text-center" justify-content-center="">
+                Strava Linki: https://www.strava.com/activities/2558657819
+            </ion-title>
+        </ion-row>
+<!--        <ion-row *ngFor="let item of users">-->
+<!--            <ion-item>-->
+<!--                {{item.name}}-->
+<!--            </ion-item>-->
+<!--            <ion-item>-->
+<!--                {{item.surname}}-->
+<!--            </ion-item>-->
+<!--            <ion-item>-->
+<!--                {{item.licenceNo}}-->
+<!--            </ion-item>-->
+<!--            <ion-item>-->
+<!--                {{item.birthDate | date: 'dd/MM/yyyy HH:mm'}}-->
+<!--            </ion-item>-->
+<!--        </ion-row>-->
+    </ion-grid>
+
+    <div class="ion-padding">
+
+    </div>
 </ion-content>
